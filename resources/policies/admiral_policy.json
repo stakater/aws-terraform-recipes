@@ -1,0 +1,33 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:*"
+      ],
+      "Resource": [
+        "arn:aws:s3:::AWS-ACCOUNT-CLUSTER-NAME-cloudinit",
+        "arn:aws:s3:::AWS-ACCOUNT-CLUSTER-NAME-cloudinit/*",
+        "arn:aws:s3:::AWS-ACCOUNT-CLUSTER-NAME-config",
+        "arn:aws:s3:::AWS-ACCOUNT-CLUSTER-NAME-config/*",
+        "arn:aws:s3:::AWS-ACCOUNT-CLUSTER-NAME-dockerhub",
+        "arn:aws:s3:::AWS-ACCOUNT-CLUSTER-NAME-dockerhub/*",
+        "arn:aws:s3:::AWS-ACCOUNT-CLUSTER-NAME-jenkins",
+        "arn:aws:s3:::AWS-ACCOUNT-CLUSTER-NAME-jenkins/*",
+        "arn:aws:s3:::AWS-ACCOUNT-CLUSTER-NAME-splunk",
+        "arn:aws:s3:::AWS-ACCOUNT-CLUSTER-NAME-splunk/*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ec2:Describe*",
+        "autoscaling:Describe*"
+      ],
+      "Resource": [
+        "*"
+      ]
+    }
+  ]
+}
